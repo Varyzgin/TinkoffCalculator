@@ -69,6 +69,8 @@ class ViewController: UIViewController {
         resetLableText()
     }
     
+    private var res: String? = "NoData"
+    
     @IBAction func calculateButtonPressed() {
         guard
             let labelText = label.text,
@@ -77,16 +79,25 @@ class ViewController: UIViewController {
         
         calculationHistory.append(.num(labelNumber))
         
-        do{
+        do {
             let result = try calculate()
-            
-        label.text = numberFormatter.string(from: NSNumber(value: result))
-            }  catch {
-                label.text = "Ошибка"
-            }
+            label.text = numberFormatter.string(from: NSNumber(value: result))
+        }  catch {
+            label.text = "Ошибка"
+        }
         calculationHistory.removeAll()
+        res = label.text
     }
     
+    @IBAction func showCalculationList(_ sender: Any) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let calculationsListViewController = sb.instantiateViewController(identifier: "CalculationsListViewController")
+        if let vc = calculationsListViewController as? CalculationsListViewController {
+//            vc.result = label.text
+            vc.result = res
+        }
+        navigationController?.pushViewController(calculationsListViewController, animated: true)
+    }
     @IBOutlet weak var label: UILabel!
     
     var calculationHistory: [CalculationHistoryItem] = []
@@ -105,6 +116,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         resetLableText()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     func calculate() throws -> Double {
