@@ -10,7 +10,17 @@ import UIKit
 class CalculationsListViewController: UIViewController {
     var calculations: [(expression: [CalculationHistoryItem], result: Double)] = []
     @IBOutlet weak var tableView: UITableView!
-    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        initialize()
+    }
+    required init?(coder: NSCoder){
+        super.init(coder: coder)
+        initialize()
+    }
+    private func initialize(){
+        modalPresentationStyle = .fullScreen
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -60,7 +70,9 @@ extension CalculationsListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryTableViewCell", for: indexPath) as? HistoryTableViewCell else { fatalError("UI -> History не работает") }
+        //guard
+        let cell: HistoryTableViewCell = tableView.dequeueReusableCell(withIdentifier: "HistoryTableViewCell", for: indexPath) as! HistoryTableViewCell
+        //else { fatalError("UI -> History не работает") }
         let historyItem = calculations[indexPath.row]
         cell.configure(with: expressionToString(historyItem.expression), result: String(historyItem.result))
         return cell

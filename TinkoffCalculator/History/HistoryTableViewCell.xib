@@ -9,40 +9,41 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="221" id="vzm-wf-SLT">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="221"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="134" id="v7n-ZJ-aGP">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="134"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vzm-wf-SLT" id="H6m-9N-LMC" customClass="HistoryTableViewCell" customModule="TinkoffCalculator" customModuleProvider="target">
-                <rect key="frame" x="0.0" y="0.0" width="393" height="221"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v7n-ZJ-aGP" id="rWl-Xv-Czj" customClass="HistoryTableViewCell" customModule="TinkoffCalculator" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="134"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bb2-uV-m1T">
-                        <rect key="frame" x="15" y="74.666666666666671" width="358" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Q3-WF-G1d">
+                        <rect key="frame" x="15" y="31" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Db5-IR-41Q"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gf-mI-E5A">
-                        <rect key="frame" x="15" y="125.66666666666669" width="358" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1k-nZ-F06">
+                        <rect key="frame" x="15" y="82" width="42" height="20.333333333333329"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="4gf-mI-E5A" firstAttribute="top" secondItem="H6m-9N-LMC" secondAttribute="centerY" constant="15" id="4tW-po-kT2"/>
-                    <constraint firstAttribute="trailing" secondItem="4gf-mI-E5A" secondAttribute="trailing" constant="20" symbolic="YES" id="5c9-dS-7TG"/>
-                    <constraint firstAttribute="trailing" secondItem="bb2-uV-m1T" secondAttribute="trailing" constant="20" symbolic="YES" id="94p-7V-oOd"/>
-                    <constraint firstItem="bb2-uV-m1T" firstAttribute="bottom" secondItem="H6m-9N-LMC" secondAttribute="centerY" constant="-15" id="QFN-QZ-fbj"/>
-                    <constraint firstItem="bb2-uV-m1T" firstAttribute="leading" secondItem="H6m-9N-LMC" secondAttribute="leading" constant="15" id="b60-y6-Bro"/>
-                    <constraint firstItem="4gf-mI-E5A" firstAttribute="leading" secondItem="H6m-9N-LMC" secondAttribute="leading" constant="15" id="uyE-0S-5rT"/>
+                    <constraint firstItem="v1k-nZ-F06" firstAttribute="top" secondItem="rWl-Xv-Czj" secondAttribute="centerY" constant="15" id="UZs-r3-xS5"/>
+                    <constraint firstItem="v1k-nZ-F06" firstAttribute="leading" secondItem="rWl-Xv-Czj" secondAttribute="leading" constant="15" id="jmH-35-y6I"/>
+                    <constraint firstItem="9Q3-WF-G1d" firstAttribute="leading" secondItem="rWl-Xv-Czj" secondAttribute="leading" constant="15" id="rU1-El-Sqo"/>
+                    <constraint firstItem="9Q3-WF-G1d" firstAttribute="bottom" secondItem="rWl-Xv-Czj" secondAttribute="centerY" constant="-15" id="s0z-dx-ton"/>
                 </constraints>
                 <connections>
-                    <outlet property="expressionLabel" destination="4gf-mI-E5A" id="EJY-Em-5lZ"/>
-                    <outlet property="resultLabel" destination="bb2-uV-m1T" id="ClS-8d-ckv"/>
+                    <outlet property="expressionLabel" destination="v1k-nZ-F06" id="0Wi-Zg-5XJ"/>
+                    <outlet property="resultLabel" destination="9Q3-WF-G1d" id="iD3-dM-269"/>
                 </connections>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-262" y="-414"/>
+            <point key="canvasLocation" x="-503.05343511450377" y="-619.71830985915494"/>
         </tableViewCell>
     </objects>
 </document>

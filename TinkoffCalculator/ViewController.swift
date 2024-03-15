@@ -34,7 +34,8 @@ enum CalculationHistoryItem {
     case operation(Operation)
 }
 class ViewController: UIViewController {
-
+    var calculationHistory: [CalculationHistoryItem] = []
+    var calculations: [(expression: [CalculationHistoryItem], result: Double)] = []
     @IBAction func buttonPressed(_ sender: UIButton) {
         guard let buttonText = sender.titleLabel?.text else { return }
 
@@ -99,8 +100,7 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var label: UILabel!
     
-    var calculationHistory: [CalculationHistoryItem] = []
-    var calculations: [(expression: [CalculationHistoryItem], result: Double)] = []
+   
     
     lazy var numberFormatter: NumberFormatter = {
         let numberFormatter = NumberFormatter()

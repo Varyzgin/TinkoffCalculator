@@ -380,7 +380,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nhC-xh-yCy">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EBu-9C-dXc">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -388,15 +388,15 @@
                         <viewLayoutGuide key="safeArea" id="fxX-GT-Iqe"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="fxX-GT-Iqe" firstAttribute="bottom" secondItem="nhC-xh-yCy" secondAttribute="bottom" id="2cT-jo-xFp"/>
-                            <constraint firstItem="nhC-xh-yCy" firstAttribute="leading" secondItem="fxX-GT-Iqe" secondAttribute="leading" id="3Ab-bJ-xiZ"/>
-                            <constraint firstItem="fxX-GT-Iqe" firstAttribute="trailing" secondItem="nhC-xh-yCy" secondAttribute="trailing" id="4RJ-HE-pkU"/>
-                            <constraint firstItem="nhC-xh-yCy" firstAttribute="top" secondItem="fxX-GT-Iqe" secondAttribute="top" id="XU3-m5-Wmb"/>
+                            <constraint firstItem="EBu-9C-dXc" firstAttribute="top" secondItem="fxX-GT-Iqe" secondAttribute="top" id="Uky-mo-wtq"/>
+                            <constraint firstItem="fxX-GT-Iqe" firstAttribute="bottom" secondItem="EBu-9C-dXc" secondAttribute="bottom" id="e0p-Fs-WAd"/>
+                            <constraint firstItem="fxX-GT-Iqe" firstAttribute="trailing" secondItem="EBu-9C-dXc" secondAttribute="trailing" id="qoo-xO-9uC"/>
+                            <constraint firstItem="EBu-9C-dXc" firstAttribute="leading" secondItem="fxX-GT-Iqe" secondAttribute="leading" id="qwl-gR-1ft"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Прошлые вычисления" id="ZDh-CB-xAl"/>
                     <connections>
-                        <outlet property="tableView" destination="nhC-xh-yCy" id="Shv-Nl-mbW"/>
+                        <outlet property="tableView" destination="EBu-9C-dXc" id="3vU-WY-qkd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gt6-sJ-jKt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
