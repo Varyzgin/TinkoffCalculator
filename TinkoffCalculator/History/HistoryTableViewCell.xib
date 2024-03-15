@@ -9,41 +9,38 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="134" id="v7n-ZJ-aGP">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="134"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="94" id="v7n-ZJ-aGP" customClass="HistoryTableViewCell" customModule="TinkoffCalculator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="94"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v7n-ZJ-aGP" id="rWl-Xv-Czj" customClass="HistoryTableViewCell" customModule="TinkoffCalculator" customModuleProvider="target">
-                <rect key="frame" x="0.0" y="0.0" width="393" height="134"/>
+                <rect key="frame" x="0.0" y="0.0" width="393" height="94"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Q3-WF-G1d">
-                        <rect key="frame" x="15" y="31" width="42" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="21" id="Db5-IR-41Q"/>
-                        </constraints>
+                        <rect key="frame" x="15" y="15" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1k-nZ-F06">
-                        <rect key="frame" x="15" y="82" width="42" height="20.333333333333329"/>
+                        <rect key="frame" x="15" y="58.666666666666664" width="42" height="20.333333333333336"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="v1k-nZ-F06" firstAttribute="top" secondItem="rWl-Xv-Czj" secondAttribute="centerY" constant="15" id="UZs-r3-xS5"/>
+                    <constraint firstItem="9Q3-WF-G1d" firstAttribute="top" secondItem="rWl-Xv-Czj" secondAttribute="top" constant="15" id="G1F-m5-xBZ"/>
+                    <constraint firstAttribute="bottom" secondItem="v1k-nZ-F06" secondAttribute="bottom" constant="15" id="QXQ-B0-7VH"/>
                     <constraint firstItem="v1k-nZ-F06" firstAttribute="leading" secondItem="rWl-Xv-Czj" secondAttribute="leading" constant="15" id="jmH-35-y6I"/>
                     <constraint firstItem="9Q3-WF-G1d" firstAttribute="leading" secondItem="rWl-Xv-Czj" secondAttribute="leading" constant="15" id="rU1-El-Sqo"/>
-                    <constraint firstItem="9Q3-WF-G1d" firstAttribute="bottom" secondItem="rWl-Xv-Czj" secondAttribute="centerY" constant="-15" id="s0z-dx-ton"/>
                 </constraints>
-                <connections>
-                    <outlet property="expressionLabel" destination="v1k-nZ-F06" id="0Wi-Zg-5XJ"/>
-                    <outlet property="resultLabel" destination="9Q3-WF-G1d" id="iD3-dM-269"/>
-                </connections>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-503.05343511450377" y="-619.71830985915494"/>
+            <connections>
+                <outlet property="expressionLabel" destination="9Q3-WF-G1d" id="mVQ-Mf-hIw"/>
+                <outlet property="resultLabel" destination="v1k-nZ-F06" id="ly7-sW-68h"/>
+            </connections>
+            <point key="canvasLocation" x="-503.05343511450377" y="-633.80281690140851"/>
         </tableViewCell>
     </objects>
 </document>
