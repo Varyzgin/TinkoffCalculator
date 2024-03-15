@@ -89,7 +89,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibx-M0-6ic">
-                                <rect key="frame" x="196.66666666666666" y="446.33333333333331" width="97.999999999999972" height="92.666666666666686"/>
+                                <rect key="frame" x="196.66666666666663" y="446.33333333333331" width="98" height="92.666666666666686"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="9" cornerStyle="medium">
                                     <backgroundConfiguration key="background" strokeWidth="7" strokeOutset="0.0">
@@ -117,7 +117,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpr-d7-WTk">
-                                <rect key="frame" x="196.66666666666666" y="539" width="97.999999999999972" height="93"/>
+                                <rect key="frame" x="196.66666666666663" y="539" width="98" height="93"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="6" cornerStyle="medium">
                                     <backgroundConfiguration key="background" strokeWidth="7" strokeOutset="0.0">
@@ -145,7 +145,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDr-Vh-2eK">
-                                <rect key="frame" x="196.66666666666666" y="632" width="97.999999999999972" height="93"/>
+                                <rect key="frame" x="196.66666666666663" y="632" width="98" height="93"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="3" cornerStyle="medium">
                                     <backgroundConfiguration key="background" strokeWidth="7" strokeOutset="0.0">
@@ -215,7 +215,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqt-vh-Jbu">
-                                <rect key="frame" x="98.333333333333329" y="725" width="196.33333333333337" height="93"/>
+                                <rect key="frame" x="98.333333333333314" y="725" width="196.33333333333337" height="93"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="0" cornerStyle="medium">
                                     <backgroundConfiguration key="background" strokeWidth="7">
@@ -380,41 +380,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEo-QN-LVT">
-                                <rect key="frame" x="196.66666666666666" y="426" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdN-xr-iq9">
-                                <rect key="frame" x="151" y="471.33333333333331" width="91" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Закрыть"/>
-                                <connections>
-                                    <action selector="dismissVCWithSender:" destination="5dP-cO-vBl" eventType="touchUpInside" id="YOK-h6-LOF"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результат:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFP-MJ-sRn">
-                                <rect key="frame" x="154.66666666666666" y="367.33333333333331" width="84" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nhC-xh-yCy">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fxX-GT-Iqe"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="nEo-QN-LVT" firstAttribute="centerY" secondItem="QCO-GN-dFF" secondAttribute="centerY" id="2Nv-5d-Zig"/>
-                            <constraint firstItem="nEo-QN-LVT" firstAttribute="top" secondItem="rFP-MJ-sRn" secondAttribute="bottom" constant="37.666666666666686" id="GBy-1F-G1h"/>
-                            <constraint firstItem="nEo-QN-LVT" firstAttribute="centerX" secondItem="QCO-GN-dFF" secondAttribute="centerX" id="LpP-WO-5Ba"/>
-                            <constraint firstItem="rFP-MJ-sRn" firstAttribute="centerX" secondItem="QCO-GN-dFF" secondAttribute="centerX" id="Z6i-8c-hdu"/>
-                            <constraint firstItem="wdN-xr-iq9" firstAttribute="centerX" secondItem="QCO-GN-dFF" secondAttribute="centerX" id="lId-jc-nSG"/>
-                            <constraint firstItem="wdN-xr-iq9" firstAttribute="top" secondItem="nEo-QN-LVT" secondAttribute="bottom" constant="45.333333333333314" id="qAg-XG-KpI"/>
+                            <constraint firstItem="fxX-GT-Iqe" firstAttribute="bottom" secondItem="nhC-xh-yCy" secondAttribute="bottom" id="2cT-jo-xFp"/>
+                            <constraint firstItem="nhC-xh-yCy" firstAttribute="leading" secondItem="fxX-GT-Iqe" secondAttribute="leading" id="3Ab-bJ-xiZ"/>
+                            <constraint firstItem="fxX-GT-Iqe" firstAttribute="trailing" secondItem="nhC-xh-yCy" secondAttribute="trailing" id="4RJ-HE-pkU"/>
+                            <constraint firstItem="nhC-xh-yCy" firstAttribute="top" secondItem="fxX-GT-Iqe" secondAttribute="top" id="XU3-m5-Wmb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Прошлые вычисления" id="ZDh-CB-xAl"/>
                     <connections>
-                        <outlet property="calculationsLabel" destination="nEo-QN-LVT" id="pNG-F7-jrO"/>
+                        <outlet property="tableView" destination="nhC-xh-yCy" id="Shv-Nl-mbW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gt6-sJ-jKt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

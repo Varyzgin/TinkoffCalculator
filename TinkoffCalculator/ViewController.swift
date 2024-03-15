@@ -82,25 +82,25 @@ class ViewController: UIViewController {
         do {
             let result = try calculate()
             label.text = numberFormatter.string(from: NSNumber(value: result))
+            calculations.append((calculationHistory, result))
         }  catch {
             label.text = "Ошибка"
         }
         calculationHistory.removeAll()
-        res = label.text
     }
     
     @IBAction func showCalculationList(_ sender: Any) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let calculationsListViewController = sb.instantiateViewController(identifier: "CalculationsListViewController")
         if let vc = calculationsListViewController as? CalculationsListViewController {
-//            vc.result = label.text
-            vc.result = res
+            vc.calculations = calculations
         }
         navigationController?.pushViewController(calculationsListViewController, animated: true)
     }
     @IBOutlet weak var label: UILabel!
     
     var calculationHistory: [CalculationHistoryItem] = []
+    var calculations: [(expression: [CalculationHistoryItem], result: Double)] = []
     
     lazy var numberFormatter: NumberFormatter = {
         let numberFormatter = NumberFormatter()
