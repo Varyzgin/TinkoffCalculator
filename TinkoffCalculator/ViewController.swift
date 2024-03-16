@@ -99,7 +99,7 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(calculationsListViewController, animated: true)
     }
     @IBOutlet weak var label: UILabel!
-    
+    @IBOutlet weak var historyButton: UIButton!
    
     
     lazy var numberFormatter: NumberFormatter = {
@@ -116,6 +116,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         resetLableText()
+        historyButton.accessibilityIdentifier = "historyButton"
     }
     
     override func viewWillAppear(_ animated: Bool) {
