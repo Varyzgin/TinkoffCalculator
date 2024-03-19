@@ -35,7 +35,9 @@ enum CalculationHistoryItem {
 }
 class ViewController: UIViewController {
     var calculationHistory: [CalculationHistoryItem] = []
-    var calculations: [(expression: [CalculationHistoryItem], result: Double)] = []
+    var calculations: [Calculation] = []
+    let calculationHistoryStorage = CalculationHistoryStorage()
+    
     @IBAction func buttonPressed(_ sender: UIButton) {
         guard let buttonText = sender.titleLabel?.text else { return }
 
@@ -83,7 +85,9 @@ class ViewController: UIViewController {
         do {
             let result = try calculate()
             label.text = numberFormatter.string(from: NSNumber(value: result))
-            calculations.append((calculationHistory, result))
+            let newCalculation = Calculation(expression: calculationHistory, result: result)
+            calculations.append(newCalculation)
+            calculationHistoryStorage.setHistory(calculation: calculations)
         }  catch {
             label.text = "Ошибка"
         }
@@ -117,6 +121,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         resetLableText()
         historyButton.accessibilityIdentifier = "historyButton"
+        calculations = calculationHistoryStorage.loadHistory()
     }
     
     override func viewWillAppear(_ animated: Bool) {

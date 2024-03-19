@@ -8,7 +8,7 @@
 import UIKit
 
 class CalculationsListViewController: UIViewController {
-    var calculations: [(expression: [CalculationHistoryItem], result: Double)] = []
+    var calculations: [Calculation] = []
     @IBOutlet weak var tableView: UITableView!
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
