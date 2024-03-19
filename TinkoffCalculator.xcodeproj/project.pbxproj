@@ -17,14 +17,8 @@
 		326C41282B978112001B6D5E /* TinkoffCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326C41272B978112001B6D5E /* TinkoffCalculatorUITests.swift */; };
 		326C412A2B978112001B6D5E /* TinkoffCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326C41292B978112001B6D5E /* TinkoffCalculatorUITestsLaunchTests.swift */; };
 		3271A4C62BA1FF7000513BCF /* CalculationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3271A4C52BA1FF7000513BCF /* CalculationsListViewController.swift */; };
-		3271A4C72BA1FF7000513BCF /* CalculationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3271A4C52BA1FF7000513BCF /* CalculationsListViewController.swift */; };
-		3271A4C82BA1FF7000513BCF /* CalculationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3271A4C52BA1FF7000513BCF /* CalculationsListViewController.swift */; };
 		3271A4CB2BA30FF200513BCF /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3271A4CA2BA30FF200513BCF /* HistoryTableViewCell.swift */; };
-		3271A4CC2BA30FF200513BCF /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3271A4CA2BA30FF200513BCF /* HistoryTableViewCell.swift */; };
-		3271A4CD2BA30FF200513BCF /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3271A4CA2BA30FF200513BCF /* HistoryTableViewCell.swift */; };
 		3271A4D32BA454A100513BCF /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3271A4D22BA454A100513BCF /* HistoryTableViewCell.xib */; };
-		3271A4D42BA454A100513BCF /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3271A4D22BA454A100513BCF /* HistoryTableViewCell.xib */; };
-		3271A4D52BA454A100513BCF /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3271A4D22BA454A100513BCF /* HistoryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,7 +259,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3271A4D42BA454A100513BCF /* HistoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +266,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3271A4D52BA454A100513BCF /* HistoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,8 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3271A4CC2BA30FF200513BCF /* HistoryTableViewCell.swift in Sources */,
-				3271A4C72BA1FF7000513BCF /* CalculationsListViewController.swift in Sources */,
 				326C411E2B978112001B6D5E /* TinkoffCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,9 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3271A4C82BA1FF7000513BCF /* CalculationsListViewController.swift in Sources */,
 				326C412A2B978112001B6D5E /* TinkoffCalculatorUITestsLaunchTests.swift in Sources */,
-				3271A4CD2BA30FF200513BCF /* HistoryTableViewCell.swift in Sources */,
 				326C41282B978112001B6D5E /* TinkoffCalculatorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
